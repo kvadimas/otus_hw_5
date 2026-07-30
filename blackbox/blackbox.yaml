@@ -9,10 +9,10 @@ modules:
       tls_config:
         insecure_skip_verify: false
       fail_if_body_not_matches_regexp:
-        - "OK"
+        - "wp-content" 
       fail_if_header_not_matches:
         - header: Content-Type
-          regexp: "application/json"
+          regexp: "text/html"
 
   tcp_connect:
     prober: tcp
