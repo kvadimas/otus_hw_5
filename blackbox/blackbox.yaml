@@ -3,7 +3,7 @@ modules:
     prober: http
     timeout: 5s
     http:
-      valid_status_codes: [200, 204]
+      valid_status_codes: [200, 204, 301]
       no_follow_redirects: false
       preferred_ip_protocol: "ip4"
       tls_config:
